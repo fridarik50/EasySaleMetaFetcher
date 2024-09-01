@@ -1,0 +1,47 @@
+
+### Description of Extensions Implemented in Easy Sale Meta Fetcher
+
+1. **Card-Based User Interface (UI):**
+   - Implemented a card-based UI for displaying each user in a RecyclerView. Each user is represented by a card with rounded corners (6px) for a modern and aesthetically pleasing design.
+
+2. **Glide Integration for Image Loading:**
+   - Used the Glide library to load user avatars from the network efficiently. This ensures that images are loaded smoothly and cached for better performance.
+
+3. **CRUD Operations (Create, Read, Update, Delete):**
+   - Implemented full CRUD operations for managing user data:
+     - **Create:** Users can be added through a Floating Action Button (FAB).
+     - **Read:** Users are displayed in a RecyclerView.
+     - **Update:** Tapping on a user allows editing their details.
+     - **Delete:** Users can be deleted using a delete button on each card.
+
+4. **MVVM Architecture:**
+   - Followed the Model-View-ViewModel (MVVM) architectural pattern for better separation of concerns and maintainability.
+   - Used LiveData to observe changes in user data and update the UI automatically.
+
+5. **Room Persistence Library for Local Storage:**
+   - Integrated Room for local data storage, ensuring that user data is persisted locally even when the app is closed.
+
+6. **Error Handling:**
+   - Implemented basic error handling for network operations and database interactions to prevent crashes and ensure a smooth user experience.
+
+### Challenges Encountered
+
+1. **MVVM Implementation:**
+   - Ensuring that all layers (Model, View, ViewModel) communicated effectively without introducing tight coupling was a challenge but was achieved successfully.
+
+2. **RecyclerView Performance:**
+   - Optimizing the RecyclerView to handle large datasets efficiently while maintaining a responsive UI was a key focus.
+
+3. **Handling Null Values:**
+   - Safely managing potential null values, especially in network responses and database operations, required careful coding practices.
+
+### Assumptions Made
+
+1. **Network Stability:**
+   - The application assumes a stable network connection for fetching user data from the API.
+
+2. **Data Integrity:**
+   - The app assumes that the data structure returned by the ReqRes API remains consistent.
+
+3. **User Details:**
+   - It is assumed that the user name consists of first and last names separated by a space when editing user information.

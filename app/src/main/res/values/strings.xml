@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">EasySaleMetaFetcher</string>
+    <string name="user_avatar">User Avatar</string>
+    <string name="add_user">Add User</string>
+    <string name="delete_user">delete user</string>
+</resources>
